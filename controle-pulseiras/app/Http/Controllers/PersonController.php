@@ -47,7 +47,7 @@ class PersonController extends Controller
             $pessoa = new Person();
             $pessoa->cpf = $request->input('cpf');
             $pessoa->nome = $request->input('nome');
-            $pessoa->quantidade_de_ingressos = $request->input('quantity', 0); // Defina o valor padrão aqui
+            $pessoa->quantidade_de_ingressos = $request->input('quantity', 0); 
             $pessoa->save();
         }
         return view('form')->with('message', $pessoa->nome . ' cadastrado com sucesso!');
@@ -69,7 +69,7 @@ class PersonController extends Controller
     {
         //
     }
-
+s
     /**
      * Show the form for editing the specified resource.
      */
